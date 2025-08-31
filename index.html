@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farid Mohamed - Frontend Dev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <!-- Logo -->
+        <div class="logo">
+          <span><i class="fas fa-code mr-2"></i>Portfolio</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+          <div class="desktop-menu-items">
+            <a href="#home" class="menu-item active">Home</a>
+            <a href="#about" class="menu-item inactive">About</a>
+            <a href="#education" class="menu-item inactive">Education</a>
+            <a href="#skills" class="menu-item inactive">Skills</a>
+            <a href="#projects" class="menu-item inactive">Projects</a>
+            <a href="#contact" class="menu-item inactive">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="mobile-menu-button">
+          <button id="mobile-menu-button" class="hamburger" aria-label="Toggle menu">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-items">
+        <a href="#home" class="mobile-menu-item active">Home</a>
+        <a href="#about" class="mobile-menu-item inactive">About</a>
+        <a href="#education" class="mobile-menu-item inactive">Education</a>
+        <a href="#skills" class="mobile-menu-item inactive">Skills</a>
+        <a href="#projects" class="mobile-menu-item inactive">Projects</a>
+        <a href="#contact" class="mobile-menu-item inactive">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+
+    <section id="home" class="section hero-pattern min-h-screen flex items-center py-20">
+      <div class="w-full mx-[40px] px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="lg:mx-0 mx-auto">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Hi, I'm <span class="text-blue-400">Farid
+              Mohamed</span></h1>
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-300 mb-6 typewriter">Frontend Developer</h2>
+          <p class="text-lg text-gray-300 mb-8 max-w-md mx-auto md:mx-0">
+            Junior Frontend Developer using React skilled in building responsive web applications with clean code,
+            state
+            management, and modern UI design. Passionate about creating seamless user experiences and growing within
+            collaborative teams.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#projects"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1">
+              View My Work
+            </a>
+            <a href="#contact"
+              class="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:-translate-y-1">
+              Contact Me
+            </a>
+          </div>
+          <!-- Social Links -->
+          <div class="mt-10 flex justify-center md:justify-start space-x-6">
+            <a href="https://github.com/Farid-Mohamed-10" target="_blank"
+              class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:-translate-y-1">
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/farid-mohamed-455884322/" target="_blank"
+              class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:-translate-y-1">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://wa.me/+201029911289" target="_blank"
+              class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:-translate-y-1">
+              <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/farid.mohamed.96199" target="_blank"
+              class="text-gray-400 hover:text-blue-400 transition duration-300 transform hover:-translate-y-1">
+              <i class="fab fa-facebook text-2xl"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Right Content with Photo  -->
+        <div class="relative mx-auto">
+          <div class="floating">
+            <div class="image-container">
+              <img src="assets/Me.jpg" alt="Profile Photo"
+                class="profile-image relative mx-auto md:mx-0 md:ml-auto w-[400px] h-[400px] rounded-[50%] object-cover" />
+            </div>
+          </div>
+          <!-- Floating elements -->
+          <div class="absolute -top-8 -left-8 w-24 h-24 rounded-lg bg-blue-600 opacity-20 floating"
+            style="animation-delay: 1s;"></div>
+          <div class="absolute -bottom-4 -right-4 w-16 h-16 rounded-lg bg-indigo-600 opacity-20 floating"
+            style="animation-delay: 1s;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section py-20" id="about" style="background-color: rgba(30, 41, 59, 0.5);">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="title-border text-5xl text-[#51a2ff] w-fit mx-auto mb-10">About Me</p>
+        <p class="mb-10 ">I am a dedicated Junior Frontend Developer with a strong foundation in web development.
+          My expertise lies in creating interactive and high-performance web applications using the React framework,
+          with a focus on clean architecture principles and effective state management solutions.</p>
+        <p class="mb-10">I specialize in React, passionate about creating responsive and user-friendly web
+          applications. I enjoy turning ideas into clean, efficient, and interactive interfaces that enhance user
+          experiences. With a strong focus on modern web technologies, state management, and performance optimization,
+          I’m always eager to learn, grow, and contribute to innovative projects within collaborative teams.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div class="shadow-md shadow-blue-300 p-10 text-center hover:-translate-y-2 duration-300 rounded-xl">
+            <p class="mb-5 text-4xl text-[#51a2ff] font-bold">React</p>
+            <p class="text-green-500">Specialist</p>
+          </div>
+          <div class="shadow-md shadow-blue-300 p-10 text-center hover:-translate-y-2 duration-300 rounded-xl">
+            <p class="mb-5 text-4xl text-[#51a2ff] font-bold">Clean</p>
+            <p class="text-green-500">Architecture</p>
+          </div>
+          <div class="shadow-md shadow-blue-300 p-10 text-center hover:-translate-y-2 duration-300 rounded-xl">
+            <p class="mb-5 text-4xl text-[#51a2ff] font-bold">Web</p>
+            <p class="text-green-500">Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="title-border text-5xl text-[#51a2ff] w-fit mx-auto mb-10">Education</p>
+        <div
+          class="shadow-md shadow-blue-300 p-10 hover:-translate-y-2 duration-300 rounded-xl lg:w-[60%] md:w-[80%] mx-auto">
+          <p class="text-[#51a2ff] text-xl font-bold my-2">Student at Artificial Intelligence Specialization</p>
+          <p class="text-green-500 text-xl font-bold my-2">Faculty of Computer Science & Artificial Intelligence</p>
+          <p class="text-gray-400 my-2">2023 - 2027</p>
+          <p class="text-blue-300">Comprehensive study in computer science and artificial intelligence fundamentals,
+            programming fundamentals (C++), web development, database, and networking.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section py-20" style="background-color: rgba(30, 41, 59, 0.5);">
+      <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="title-border text-5xl text-[#51a2ff] w-fit mx-auto mb-10">Skills</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div class="shadow-blue-300 shadow-sm py-6 px-8 rounded-lg hover:-translate-y-2 duration-300">
+            <p class="border-b-2 border-y-5 border-green-500 pb-3 text-blue-500 text-xl">Software Development</p>
+            <ul class="my-5 flex flex-col gap-3">
+              <li class="list-item">OOP</li>
+              <li class="list-item">Data Stucture & Algorithms</li>
+              <li class="list-item">Problem Solving</li>
+              <li class="list-item">Project Management</li>
+            </ul>
+          </div>
+          <div class="shadow-blue-300 shadow-sm py-6 px-8 rounded-lg hover:-translate-y-2 duration-300">
+            <p class="border-b-2 border-y-5 border-green-500 pb-3 text-blue-500 text-xl">Programming Languages</p>
+            <ul class="my-5 flex flex-col gap-3">
+              <li class="list-item">C++</li>
+              <li class="list-item">Python</li>
+              <li class="list-item">Java Script</li>
+              <li class="list-item">PHP</li>
+            </ul>
+          </div>
+          <div class="shadow-blue-300 shadow-sm py-6 px-8 rounded-lg hover:-translate-y-2 duration-300">
+            <p class="border-b-2 border-y-5 border-green-500 pb-3 text-blue-500 text-xl">Framework and Architectures</p>
+            <ul class="my-5 flex flex-col gap-3">
+              <li class="list-item">React</li>
+            </ul>
+          </div>
+          <div class="shadow-blue-300 shadow-sm py-6 px-8 rounded-lg hover:-translate-y-2 duration-300">
+            <p class="border-b-2 border-y-5 border-green-500 pb-3 text-blue-500 text-xl">Databases and Storage</p>
+            <ul class="my-5 flex flex-col gap-3">
+              <li class="list-item">SQL Server</li>
+            </ul>
+          </div>
+          <div class="shadow-blue-300 shadow-sm py-6 px-8 rounded-lg hover:-translate-y-2 duration-300">
+            <p class="border-b-2 border-y-5 border-green-500 pb-3 text-blue-500 text-xl">Tools & Technologies</p>
+            <ul class="my-5 flex flex-col gap-3">
+              <li class="list-item">Git & GitHub</li>
+              <li class="list-item">Figma</li>
+            </ul>
+          </div>
+          <div class="shadow-blue-300 shadow-sm py-6 px-8 rounded-lg hover:-translate-y-2 duration-300">
+            <p class="border-b-2 border-y-5 border-green-500 pb-3 text-blue-500 text-xl">Languages</p>
+            <ul class="my-5 flex flex-col gap-3">
+              <li class="list-item">Arabic (Native)</li>
+              <li class="list-item">English (Good)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-20">
+      <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="title-border text-5xl text-[#51a2ff] w-fit mx-auto mb-10">Featured Projects</p>
+        <div class="shadow-2xl shadow-blue-600 py-10 px-8 rounded-lg">
+          <p class="text-2xl text-blue-400 mb-6">E-Commerce Project</p>
+          <p class="text-[#FFFFFF] text-lg mb-6">A full-featured e-commerce mobile application built with Flutter,
+            offering a complete shopping experience
+            with product browsing, cart management, secure payments, and order tracking. Designed with modern UI/UX
+            principles and optimized performance.</p>
+          <ul class="flex items-center flex-wrap gap-5 mb-6 ">
+            <li class="px-4 py-2 bg-sky-600 rounded-full text-center">React</li>
+            <li class="px-4 py-2 bg-sky-600 rounded-full text-center">Laravel</li>
+            <li class="px-4 py-2 bg-sky-600 rounded-full text-center">API Integration</li>
+          </ul>
+          <p class="text-[#51a2ff] text-lg mb-3">Key Features: </p>
+          <ul class="flex flex-col gap-3">
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-arrow-right-long text-green-500"></i>
+              <p>Shopping cart and wishlist functionality.</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-arrow-right-long text-green-500"></i>
+              <p>Admin panal administration to manage the system.</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-arrow-right-long text-green-500"></i>
+              <p>Secure user authentication and profile management.</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-arrow-right-long text-green-500"></i>
+              <p>User reviews and ratings.</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-arrow-right-long text-green-500"></i>
+              <p>Store users, products, and categories in the database.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-20" style="background-color: rgba(30, 41, 59, 0.5);">
+      <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="title-border text-5xl text-[#51a2ff] w-fit mx-auto mb-10">Contact Me</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="shadow-md shadow-blue-300 p-8 rounded-lg mb-10">
+            <p class="text-2xl text-[#51a2ff] mb-10">Contact Information</p>
+            <ul class="flex flex-col gap-7 my-4">
+              <li class="bg-indigo-500 p-4 rounded-lg">Email: <a href="https://mail.google.com" target="_blank"
+                  class="hover:underline">fm221210@gmail.com</a></li>
+              <li class="bg-indigo-500 p-4  rounded-lg">Phone: <a href="https://wa.me/+201029911289" target="_blank"
+                  class="hover:underline">+20 102
+                  991 1289</a></li>
+              <li class="bg-indigo-500 p-4  rounded-lg">Location: Egypt, Read Sea, Hurghada</li>
+              <li class="bg-indigo-500 p-4  rounded-lg">Date of Birth: January 17, 2005</li>
+              <li class="bg-indigo-500 p-4  rounded-lg">Nationality: Egyptian</li>
+              <li class="bg-indigo-500 p-4  rounded-lg">Marital Status: Single</li>
+            </ul>
+          </div>
+          <div class=" shadow-md shadow-blue-300 p-8 rounded-lg mb-10">
+            <p class="text-2xl text-[#51a2ff] mb-10">Send Message</p>
+            <form class="flex flex-col gap-6 my-4">
+              <input type="text" placeholder="Your Name"
+                class="px-4 py-4 rounded-lg w-full text-black border-[3px] border-solid border-[#e2e8f0] focus:border-green-500 duration-300 outline-none">
+              <input type="text" placeholder="Your Email"
+                class="px-4 py-4 rounded-lg w-full text-black border-[3px] border-solid border-[#e2e8f0] focus:border-green-500 duration-300 outline-none">
+              <input type="text" placeholder="Subject"
+                class="px-4 py-4 rounded-lg w-full text-black border-[3px] border-solid border-[#e2e8f0] focus:border-green-500 duration-300 outline-none">
+              <textarea id="text-area"
+                class="px-4 py-4 rounded-lg w-full text-black border-[3px] border-solid border-[#e2e8f0] focus:border-green-500 duration-300 outline-none h-36"
+                placeholder="Your Message"></textarea>
+              <button type="submit" class="w-fit bg-blue-500 px-6 py-3 rounded-full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-indigo-500 text-center">
+    <p class="py-9 px-3 text-xl">© 2025 Farid Mohamed Farid. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = mobileMenuButton.querySelector('i');
+
+      // Toggle mobile menu
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('open');
+        mobileMenuButton.classList.toggle('active');
+
+        // Toggle between hamburger and close icon
+        if (mobileMenu.classList.contains('open')) {
+          hamburgerIcon.classList.remove('fa-bars');
+          hamburgerIcon.classList.add('fa-times');
+        } else {
+          hamburgerIcon.classList.remove('fa-times');
+          hamburgerIcon.classList.add('fa-bars');
+        }
+      });
+
+      // Close mobile menu when a link is clicked
+      const mobileMenuLinks = document.querySelectorAll('.mobile-menu-item');
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          mobileMenu.classList.remove('open');
+          mobileMenuButton.classList.remove('active');
+          hamburgerIcon.classList.remove('fa-times');
+          hamburgerIcon.classList.add('fa-bars');
+        });
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Update active link on scroll
+      window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.menu-item, .mobile-menu-item');
+        let currentSection = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          link.classList.add('inactive');
+          if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.remove('inactive');
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
